@@ -19,18 +19,12 @@
         WCSession * session = [WCSession defaultSession];
         session.delegate = self;
         [session activateSession];
-        [session updateApplicationContext:@{@"name":@"张三"} error:nil];
+        [session updateApplicationContext:@{@"name":@"赵六"} error:nil];
     }
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-   
-    
-//    NSUserDefaults * defaults2 = [[NSUserDefaults alloc]initWithSuiteName:@"group.watchapp.helloworld"];
-//    NSString * string = [defaults2 objectForKey:@"name"];
-//    NSLog(@"%@",string);
-//    NSLog(@"%@",defaults2);
 }
 
 

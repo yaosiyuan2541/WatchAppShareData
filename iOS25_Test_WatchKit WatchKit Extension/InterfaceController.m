@@ -7,13 +7,12 @@
 //
 
 #import "InterfaceController.h"
-#import "TableController.h"
 #import <WatchConnectivity/WatchConnectivity.h>
 @interface InterfaceController()<WCSessionDelegate>
 {
     WCSession * session;
 }
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceTable *mytable;
+
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *infoLabel;
 
 @end
@@ -23,19 +22,7 @@
 //watchOS1中可以使用group进行设备之间的数据通信，但是在WatchOS2以后，watch已经不在是附属，而是一个独立的设备类似于两个独立的iPhone，所以需要使用新的方法进行通信
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-    if ([WCSession isSupported]) {
-        session = [WCSession defaultSession];
-        session.delegate = self;
-        [session activateSession];
-    }
-    
-        [self.mytable setNumberOfRows:10 withRowType:@"TableController"];
-    
-    for (int i = 0; i < 10; i++) {
-        TableController * tabRow = (TableController *)[self.mytable rowControllerAtIndex:i];
-        [tabRow.mylabel setText:@"label"];
-        [tabRow.mylabel setTextColor:[UIColor redColor]];
-    }
+
 }
 - (IBAction)getInfo {
     if ([WCSession isSupported]) {
@@ -46,12 +33,7 @@
     /*将接收到的消息展示到刚刚准备好的label上*/
     [self.infoLabel setText:session.receivedApplicationContext[@"name"]];
 }
--(void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex
-{
-    TableController * tabRow = (TableController *)[self.mytable rowControllerAtIndex:rowIndex];
-    
-    [tabRow.mylabel setText:session.receivedApplicationContext[@"name"]];
-}
+
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user

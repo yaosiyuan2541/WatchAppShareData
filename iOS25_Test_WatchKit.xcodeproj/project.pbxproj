@@ -20,7 +20,6 @@
 		2A1182961CB4B76B009E98EC /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1182951CB4B76B009E98EC /* InterfaceController.m */; };
 		2A1182991CB4B76B009E98EC /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1182981CB4B76B009E98EC /* ExtensionDelegate.m */; };
 		2A11829B1CB4B76B009E98EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A11829A1CB4B76B009E98EC /* Assets.xcassets */; };
-		2A1182AD1CB4B84F009E98EC /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1182AC1CB4B84F009E98EC /* TableController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +87,6 @@
 		2A11829A1CB4B76B009E98EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A11829C1CB4B76B009E98EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A1182AA1CB4B780009E98EC /* iOS25_Test_WatchKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iOS25_Test_WatchKit.entitlements; sourceTree = "<group>"; };
-		2A1182AB1CB4B84F009E98EC /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
-		2A1182AC1CB4B84F009E98EC /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		2A1182AE1CB4BA35009E98EC /* iOS25_Test_WatchKit WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iOS25_Test_WatchKit WatchKit App.entitlements"; sourceTree = "<group>"; };
 		2A1182AF1CB4BB34009E98EC /* iOS25_Test_WatchKit WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iOS25_Test_WatchKit WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,8 +171,6 @@
 				2A1182AF1CB4BB34009E98EC /* iOS25_Test_WatchKit WatchKit Extension.entitlements */,
 				2A1182941CB4B76B009E98EC /* InterfaceController.h */,
 				2A1182951CB4B76B009E98EC /* InterfaceController.m */,
-				2A1182AB1CB4B84F009E98EC /* TableController.h */,
-				2A1182AC1CB4B84F009E98EC /* TableController.m */,
 				2A1182971CB4B76B009E98EC /* ExtensionDelegate.h */,
 				2A1182981CB4B76B009E98EC /* ExtensionDelegate.m */,
 				2A11829A1CB4B76B009E98EC /* Assets.xcassets */,
@@ -343,7 +338,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A1182AD1CB4B84F009E98EC /* TableController.m in Sources */,
 				2A1182991CB4B76B009E98EC /* ExtensionDelegate.m in Sources */,
 				2A1182961CB4B76B009E98EC /* InterfaceController.m in Sources */,
 			);
