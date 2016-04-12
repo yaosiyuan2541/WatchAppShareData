@@ -19,7 +19,12 @@
         WCSession * session = [WCSession defaultSession];
         session.delegate = self;
         [session activateSession];
-        [session updateApplicationContext:@{@"name":@"赵六"} error:nil];
+        [session updateApplicationContext:@{@"name":@"sdfgj"} error:nil];
+//        [session transferUserInfo:@{@"name":@"赵六"}];
+//        [session transferUserInfo:@{@"name":@"张三"}];
+//        [session transferUserInfo:@{@"name":@"李四"}];
+//        [session transferUserInfo:@{@"name":@"王五"}];
+        
     }
 }
 - (void)viewDidLoad {
